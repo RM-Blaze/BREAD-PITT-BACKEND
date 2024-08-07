@@ -2,13 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.mjs",
+  "main": "./src/index.ts",
   "type":"module",
   "scripts": {
     "dev": "concurrently \"nodemon\" \"npm run stripe\"",
     "stripe": "stripe listen --forward-to localhost:7000/api/order/checkout/webhook",
     "build": "npm install && npx tsc",
-    "start": "node dist/index.mjs"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
